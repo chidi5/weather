@@ -42,7 +42,7 @@ function Form({
 
     return (
         <form onSubmit={apiCall}>
-            <div className="mt-5 flex justify-between gap-4 flex-col md:flex-row">
+            <div className="flex justify-between gap-4 flex-col md:flex-row">
                 <div className="relative h-11 w-full min-w-[200px]">
                     <input
                       type="text" 
