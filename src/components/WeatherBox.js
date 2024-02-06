@@ -15,10 +15,7 @@ function WeatherBox({
         : weather && 
           (
             <div className='mt-14 md:w-fit lg:w-fit'>
-              <div className="flex flex-row gap-3">
-                <p className="text-md text-gray-500">{city}</p>
-                <CurrentDateTime />
-              </div>
+              <CurrentDateTime city={city} />
 
               <div className="flex justify-center">
                 <div className='text-center'>
