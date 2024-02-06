@@ -3,6 +3,7 @@ import CurrentDateTime from './CurrentDateTime'
 import WeatherIcon from './WeatherIcon'
 
 function WeatherBox({
+  city,
   weather,
   loading
 }) {
@@ -14,7 +15,10 @@ function WeatherBox({
         : weather && 
           (
             <div className='mt-14 md:w-fit lg:w-fit'>
-              <CurrentDateTime />
+              <div className="flex flex-row gap-3">
+                <p className="text-md text-gray-500">{city}</p>
+                <CurrentDateTime />
+              </div>
 
               <div className="flex justify-center">
                 <div className='text-center'>
