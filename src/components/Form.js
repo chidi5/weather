@@ -19,8 +19,7 @@ function Form({
         e.preventDefault()
         //const city = e.target.elements.city.value
         const url = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${process.env.REACT_APP_API_KEY}`;
-        const req = axios.get(url);
-        const res = await req;
+        const res = await axios.get(url);
         setLat(res.data[0].lat)
         setLong(res.data[0].lon)
 
