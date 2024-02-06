@@ -32,12 +32,12 @@ function Form({
         console.log(lat, long)
     }*/
 
-    const handleKeyDown = (e) => {
+    /*const handleKeyDown = (e) => {
         if (e.key === 'Enter') {
             apiCall(e)
             //submitRegHandler(e);
         }
-    }
+    }*/
 
 
     return (
