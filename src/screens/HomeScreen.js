@@ -69,7 +69,7 @@ function HomeScreen() {
                 <div className='col-span-12 sm:col-span-12 md:col-span-5 lg:col-span-5'>
                     <div className='py-5'>
                         <Form city={city} setCity={setCity} lat={lat} setLat={setLat} long={long} setLong={setLong} />
-                        <WeatherBox weather={weatherToday} loading={loading} />
+                        <WeatherBox city={city} weather={weatherToday} loading={loading} />
                     </div>
                 </div>
                 <div className='col-span-12 sm:col-span-12 md:col-span-7 lg:col-span-7'>
